@@ -1,0 +1,254 @@
+/* ======================================
+   InAmigos Foundation — Awareness Page
+   Stylesheet — colors matched to the
+   official IAF star logo
+====================================== */
+
+:root{
+  --orange:  #FF4700;   /* logo: top-left figure   */
+  --blue:    #008DD4;   /* logo: top-right figure  */
+  --magenta: #AB0B75;   /* logo: right figure      */
+  --green:   #00A13A;   /* logo: bottom figure      */
+  --yellow:  #FEA700;   /* logo: left figure        */
+  --ink:     #1A1A1A;   /* logo: "IAF" wordmark      */
+  --blue-deep: #073B5C; /* darkened blue for contrast sections */
+  --paper:   #FFFFFF;
+  --card:    #FAFAFA;
+  --line:    rgba(0,0,0,0.10);
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+html{scroll-behavior:smooth;}
+
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:'Inter',sans-serif;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+
+h1,h2,h3{
+  font-family:'Fraunces',serif;
+  font-weight:600;
+  line-height:1.08;
+  letter-spacing:-0.01em;
+}
+
+.eyebrow{
+  font-family:'Space Grotesk',sans-serif;
+  font-size:0.78rem;
+  font-weight:600;
+  letter-spacing:0.14em;
+  text-transform:uppercase;
+  color:var(--orange);
+}
+
+a{color:inherit;text-decoration:none;}
+img,svg{display:block;}
+
+.wrap{
+  max-width:1080px;
+  margin:0 auto;
+  padding:0 32px;
+}
+
+/* ---------- NAV ---------- */
+header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(255,255,255,0.92);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+}
+nav{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:14px 32px;
+  max-width:1080px;margin:0 auto;
+}
+.logo{
+  display:flex;align-items:center;gap:10px;
+  font-family:'Fraunces',serif;font-weight:600;font-size:1.15rem;
+  color:var(--ink);
+}
+.logo img{height:34px;width:auto;}
+.navlinks{display:flex;gap:30px;font-size:0.92rem;font-weight:500;}
+.navlinks a{color:var(--ink);opacity:0.75;transition:opacity .2s;}
+.navlinks a:hover{opacity:1;}
+.nav-cta{
+  background:var(--orange);color:#fff;
+  padding:9px 20px;border-radius:100px;
+  font-size:0.88rem;font-weight:600;
+}
+@media (max-width:720px){ .navlinks{display:none;} }
+
+/* ---------- HERO ---------- */
+.hero{
+  padding:80px 32px 70px;
+  max-width:1080px;margin:0 auto;
+  position:relative;
+}
+.hero-grid{
+  display:grid;grid-template-columns:1.3fr 1fr;gap:48px;align-items:center;
+}
+.hero h1{
+  font-size:clamp(2.3rem,5vw,3.6rem);
+  color:var(--ink);
+  margin-top:14px;
+}
+.hero h1 em{
+  font-style:italic;color:var(--orange);
+}
+.hero p.lede{
+  margin-top:20px;font-size:1.08rem;max-width:480px;color:#444;
+}
+.hero-ctas{margin-top:32px;display:flex;gap:14px;flex-wrap:wrap;}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:13px 26px;border-radius:100px;
+  font-weight:600;font-size:0.95rem;
+  transition:transform .15s ease, box-shadow .15s ease;
+}
+.btn-primary{background:var(--orange);color:#fff;}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(255,71,0,0.32);}
+.btn-outline{border:1.5px solid var(--blue);color:var(--blue-deep);}
+.btn-outline:hover{transform:translateY(-2px);background:rgba(0,141,212,0.08);}
+
+.hero-badge-strip{
+  margin-top:40px;display:flex;gap:28px;flex-wrap:wrap;
+  font-family:'Space Grotesk',sans-serif;
+}
+.hb-num{font-size:1.6rem;font-weight:600;color:var(--ink);}
+.hb-label{font-size:0.78rem;color:#6b6b6b;text-transform:uppercase;letter-spacing:0.06em;}
+
+.hero-visual{
+  position:relative;
+  display:flex;align-items:center;justify-content:center;
+}
+.hero-visual .ring{
+  position:relative;
+  width:100%;max-width:320px;
+  aspect-ratio:1/1;
+  border-radius:50%;
+  background:var(--card);
+  border:1px solid var(--line);
+  display:flex;align-items:center;justify-content:center;
+  padding:30px;
+}
+.hero-visual img{width:100%;height:auto;}
+
+/* ---------- SECTION COMMON ---------- */
+section{padding:78px 32px;}
+.section-head{max-width:600px;margin-bottom:48px;}
+.section-head h2{font-size:clamp(1.7rem,3.4vw,2.4rem);color:var(--ink);margin-top:10px;}
+.section-head p{margin-top:14px;color:#444;font-size:1.02rem;}
+
+/* ---------- ABOUT ---------- */
+.about{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;max-width:1080px;margin:0 auto;align-items:start;}
+.about-text p{color:#444;margin-bottom:16px;}
+.about-text strong{color:var(--ink);}
+.cert-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+.cert{
+  border:1px solid var(--line);background:var(--paper);
+  border-radius:14px;padding:18px 16px;
+  border-top:3px solid var(--orange);
+}
+.cert:nth-child(2){border-top-color:var(--blue);}
+.cert:nth-child(3){border-top-color:var(--green);}
+.cert:nth-child(4){border-top-color:var(--magenta);}
+.cert-icon{width:30px;height:30px;margin-bottom:10px;}
+.cert h4{font-family:'Space Grotesk',sans-serif;font-size:0.92rem;font-weight:600;color:var(--ink);}
+.cert p{font-size:0.82rem;color:#666;margin-top:4px;}
+
+@media (max-width:760px){ .about-grid{grid-template-columns:1fr;} }
+
+/* ---------- PROJECTS ---------- */
+.projects-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:22px;
+  max-width:1080px;margin:0 auto;
+}
+.pcard{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:26px 24px;
+  position:relative;
+  overflow:hidden;
+  transition:transform .2s ease, box-shadow .2s ease;
+}
+.pcard:hover{transform:translateY(-4px);box-shadow:0 14px 28px rgba(0,0,0,0.10);}
+.pcard .tag{
+  font-family:'Space Grotesk',sans-serif;font-size:0.7rem;font-weight:600;
+  letter-spacing:0.1em;text-transform:uppercase;
+}
+.pcard h3{font-size:1.22rem;margin-top:8px;color:var(--ink);}
+.pcard p{font-size:0.92rem;color:#555;margin-top:10px;}
+.picon{width:42px;height:42px;margin-bottom:14px;}
+
+/* each card keyed to one of the five logo colors, echoing the five figures in the star */
+.pcard.c-orange .tag{color:var(--orange);}
+.pcard.c-blue .tag{color:var(--blue);}
+.pcard.c-magenta .tag{color:var(--magenta);}
+.pcard.c-green .tag{color:var(--green);}
+.pcard.c-yellow .tag{color:var(--yellow);}
+
+@media (max-width:900px){ .projects-grid{grid-template-columns:repeat(2,1fr);} }
+@media (max-width:600px){ .projects-grid{grid-template-columns:1fr;} }
+
+/* ---------- IMPACT ---------- */
+.impact{background:var(--blue-deep);color:#fff;}
+.impact .section-head h2,.impact .section-head p{color:#fff;}
+.impact .section-head p{color:rgba(255,255,255,0.78);}
+.impact-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:20px;
+  max-width:1080px;margin:0 auto;
+}
+.istat{
+  border:1px solid rgba(255,255,255,0.18);
+  border-radius:16px;padding:26px 20px;
+  border-top:3px solid var(--yellow);
+}
+.istat:nth-child(2){border-top-color:var(--orange);}
+.istat:nth-child(3){border-top-color:var(--green);}
+.istat:nth-child(4){border-top-color:var(--magenta);}
+.istat .num{font-family:'Fraunces',serif;font-size:2.3rem;font-weight:600;color:var(--yellow);}
+.istat .label{margin-top:6px;font-size:0.88rem;color:rgba(255,255,255,0.8);}
+@media (max-width:760px){ .impact-grid{grid-template-columns:repeat(2,1fr);} }
+
+/* ---------- CTA ---------- */
+.cta{
+  text-align:center;
+  background:var(--orange);
+  border-radius:28px;
+  margin:0 32px 90px;
+  padding:64px 32px;
+  color:#fff;
+}
+.cta h2{font-size:clamp(1.8rem,4vw,2.6rem);color:#fff;}
+.cta p{margin-top:14px;font-size:1.05rem;max-width:520px;margin-left:auto;margin-right:auto;color:rgba(255,255,255,0.92);}
+.cta-ctas{margin-top:30px;display:flex;justify-content:center;gap:14px;flex-wrap:wrap;}
+.cta .btn-primary{background:#fff;color:var(--orange);}
+.cta .btn-outline{border:1.5px solid rgba(255,255,255,0.7);color:#fff;}
+.cta .btn-outline:hover{background:rgba(255,255,255,0.12);}
+
+/* ---------- FOOTER ---------- */
+footer{
+  border-top:1px solid var(--line);
+  padding:42px 32px;
+}
+.footer-grid{
+  max-width:1080px;margin:0 auto;
+  display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:18px;
+}
+.footer-grid .logo img{height:30px;}
+.social{display:flex;gap:16px;font-size:0.9rem;font-weight:500;}
+.social a{opacity:0.7;transition:opacity .2s;}
+.social a:hover{opacity:1;}
+.foot-note{font-size:0.8rem;color:#777;margin-top:6px;}
+
+:focus-visible{outline:2px solid var(--blue);outline-offset:3px;}
+
+@media (prefers-reduced-motion: reduce){
+  *{transition:none !important;}
+}
