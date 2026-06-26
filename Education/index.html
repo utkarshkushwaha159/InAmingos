@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BrightPath Academy — Learn Skills That Matter</title>
+  <meta name="description" content="BrightPath Academy offers skill-based online courses in coding, design, spoken English, and exam prep for students and working professionals." />
+  <meta name="keywords" content="online education, coding courses, design courses, exam prep, skill development, BrightPath Academy" />
+  <meta property="og:title" content="BrightPath Academy — Learn Skills That Matter" />
+  <meta property="og:description" content="Unlock your potential with industry-relevant courses from expert instructors." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>" />
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <!-- Page Loader Bar -->
+  <div class="page-loader" id="pageLoader"></div>
+
+  <!-- =================== NAVBAR =================== -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="#home" class="nav-logo" id="site-logo">
+          <div class="logo-icon">🎓</div>
+          Bright<span>Path</span>
+        </a>
+        <ul class="nav-links" role="list">
+          <li><a href="#home" class="active" id="nav-home">Home</a></li>
+          <li><a href="#about" id="nav-about">About</a></li>
+          <li><a href="#courses" id="nav-courses">Courses</a></li>
+          <li><a href="#instructors" id="nav-instructors">Instructors</a></li>
+          <li><a href="#testimonials" id="nav-testimonials">Testimonials</a></li>
+          <li><a href="#contact" id="nav-contact" class="nav-cta">Contact Us</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Mobile navigation">
+    <button class="mobile-close" id="mobileClose" aria-label="Close menu">✕</button>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#courses">Courses</a>
+    <a href="#instructors">Instructors</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+    <a href="#courses" class="btn btn-primary">Browse Courses</a>
+  </div>
+
+  <main>
+    <!-- =================== HERO =================== -->
+    <section class="hero" id="home">
+      <img src="assets/hero_bg.png" alt="" class="hero-bg-img" loading="eager" />
+      <div class="hero-overlay"></div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <i class="fas fa-star"></i>
+            Trusted by 50,000+ Learners Across India
+          </div>
+          <h1>
+            Learn Skills That<br/>
+            <span class="highlight">Shape Your Future</span>
+          </h1>
+          <p>
+            BrightPath Academy delivers industry-relevant courses in tech, design, communication & exam prep — taught by real experts with real results. Start learning today, get ahead tomorrow.
+          </p>
+          <div class="hero-actions">
+            <a href="#courses" class="btn btn-primary" id="hero-browse-btn">
+              <i class="fas fa-graduation-cap"></i>
+              Browse Courses
+            </a>
+            <a href="#about" class="btn btn-outline" id="hero-learn-btn">
+              <i class="fas fa-play-circle"></i>
+              Learn More
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Floating Cards -->
+      <div class="hero-floater">
+        <div class="floater-card">
+          <div class="f-icon">👨‍🎓</div>
+          <div class="f-num" data-count="50000" data-suffix="+">0</div>
+          <div class="f-label">Students</div>
+        </div>
+        <div class="floater-card">
+          <div class="f-icon">📚</div>
+          <div class="f-num" data-count="120" data-suffix="+">0</div>
+          <div class="f-label">Courses</div>
+        </div>
+        <div class="floater-card">
+          <div class="f-icon">🏆</div>
+          <div class="f-num" data-count="95" data-suffix="%">0</div>
+          <div class="f-label">Success Rate</div>
+        </div>
+        <div class="floater-card">
+          <div class="f-icon">🌟</div>
+          <div class="f-num" data-count="4.8" data-suffix="">4.8</div>
+          <div class="f-label">Avg. Rating</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== STATS STRIP =================== -->
+    <div class="stats-strip" id="stats-strip">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item reveal">
+            <span class="stat-num" data-count="50000" data-suffix="+">0</span>
+            <div class="stat-label">Students Enrolled</div>
+          </div>
+          <div class="stat-item reveal" data-delay="100">
+            <span class="stat-num" data-count="120" data-suffix="+">0</span>
+            <div class="stat-label">Courses Offered</div>
+          </div>
+          <div class="stat-item reveal" data-delay="200">
+            <span class="stat-num" data-count="45" data-suffix="+">0</span>
+            <div class="stat-label">Expert Instructors</div>
+          </div>
+          <div class="stat-item reveal" data-delay="300">
+            <span class="stat-num" data-count="15" data-suffix="+">0</span>
+            <div class="stat-label">Industry Partners</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =================== ABOUT =================== -->
+    <section class="about-section section-pad" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <!-- Visual Column -->
+          <div class="about-visual reveal">
+            <div class="about-visual-card">
+              <div class="about-icon-grid">
+                <div class="about-icon-item">
+                  <span class="icon">💻</span>
+                  <div><strong>Tech Courses</strong><span>Coding & Dev</span></div>
+                </div>
+                <div class="about-icon-item">
+                  <span class="icon">🎨</span>
+                  <div><strong>Design</strong><span>UI/UX & Visual</span></div>
+                </div>
+                <div class="about-icon-item">
+                  <span class="icon">🗣️</span>
+                  <div><strong>Soft Skills</strong><span>English & Comm.</span></div>
+                </div>
+                <div class="about-icon-item">
+                  <span class="icon">📝</span>
+                  <div><strong>Exam Prep</strong><span>UPSC, CAT, IELTS</span></div>
+                </div>
+              </div>
+              <div class="about-accent-bar"></div>
+              <div style="margin-top:20px; display:flex; align-items:center; gap:12px;">
+                <div style="width:48px;height:48px;background:linear-gradient(135deg,#00BFA5,#1565C0);border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-size:1.4rem;">🏅</div>
+                <div>
+                  <strong style="font-size:0.95rem;color:#1A1A2E;">ISO Certified Platform</strong>
+                  <div style="font-size:0.8rem;color:#718096;">Quality assured learning experience</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Content Column -->
+          <div class="about-content reveal" data-delay="150">
+            <div class="section-label">✦ About BrightPath</div>
+            <h2 class="section-title">Our Mission: Make Quality Education Accessible to All</h2>
+            <p class="section-subtitle">
+              BrightPath Academy was founded in 2019 with a simple belief — every student and professional deserves access to world-class education, regardless of their background or location.
+            </p>
+
+            <div class="feature-list">
+              <div class="feature-item">
+                <div class="check-icon"><i class="fas fa-check"></i></div>
+                <div class="feat-text">
+                  <strong>Industry-Curated Curriculum</strong>
+                  <span>Our courses are designed with top companies to ensure job-ready skills from day one.</span>
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="check-icon"><i class="fas fa-check"></i></div>
+                <div class="feat-text">
+                  <strong>Learn at Your Own Pace</strong>
+                  <span>Lifetime access to course materials — study whenever, wherever you want.</span>
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="check-icon"><i class="fas fa-check"></i></div>
+                <div class="feat-text">
+                  <strong>Mentorship & Community</strong>
+                  <span>Get personal guidance from instructors and join a thriving learner community of 50,000+.</span>
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="check-icon"><i class="fas fa-check"></i></div>
+                <div class="feat-text">
+                  <strong>Verified Certificates</strong>
+                  <span>Earn industry-recognized certificates that boost your resume and LinkedIn profile.</span>
+                </div>
+              </div>
+            </div>
+
+            <div style="margin-top:32px;">
+              <a href="#courses" class="btn btn-primary" id="about-cta-btn">
+                <i class="fas fa-arrow-right"></i> Explore Courses
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Differentiators -->
+        <div class="differentiators" style="margin-top:64px;">
+          <div class="diff-card reveal">
+            <div class="d-icon">🚀</div>
+            <h4>Fast-Track Learning</h4>
+            <p>Structured paths designed for results in weeks, not months.</p>
+          </div>
+          <div class="diff-card reveal" data-delay="100">
+            <div class="d-icon">💰</div>
+            <h4>Affordable Pricing</h4>
+            <p>Premium education at prices that won't break the bank. EMI available.</p>
+          </div>
+          <div class="diff-card reveal" data-delay="200">
+            <div class="d-icon">🎯</div>
+            <h4>Career-Focused</h4>
+            <p>We track placement rates. 95% of our graduates land better opportunities.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== COURSES =================== -->
+    <section class="courses-section section-pad" id="courses">
+      <div class="container">
+        <div class="text-center reveal">
+          <div class="section-label">✦ What We Offer</div>
+          <h2 class="section-title">Explore Our Courses</h2>
+          <p class="section-subtitle">From in-demand tech skills to essential soft skills — find the perfect course for your goals.</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="courses-filter">
+          <button class="filter-btn active" data-filter="all" id="filter-all">All Courses</button>
+          <button class="filter-btn" data-filter="tech" id="filter-tech">💻 Tech</button>
+          <button class="filter-btn" data-filter="design" id="filter-design">🎨 Design</button>
+          <button class="filter-btn" data-filter="softskills" id="filter-softskills">🗣️ Soft Skills</button>
+          <button class="filter-btn" data-filter="exam" id="filter-exam">📝 Exam Prep</button>
+          <button class="filter-btn" data-filter="data" id="filter-data">📊 Data</button>
+        </div>
+
+        <div class="courses-grid" id="coursesGrid">
+
+          <!-- Course 1: Python -->
+          <div class="course-card reveal" data-category="tech" data-delay="0">
+            <div class="course-card-top cc-tech">
+              <span class="course-tag tag-free">Free</span>
+              🐍
+            </div>
+            <div class="course-card-body">
+              <div class="course-category">Technology</div>
+              <h3>Python Programming for Beginners</h3>
+              <p>Master the world's most popular programming language from scratch — variables, loops, functions, and real-world mini projects.</p>
+              <div class="course-meta">
+                <span><i class="fas fa-clock"></i> 8 Weeks</span>
+                <span><i class="fas fa-signal"></i> Beginner</span>
+                <span><i class="fas fa-users"></i> 12,400 enrolled</span>
+              </div>
+            </div>
+            <div class="course-card-footer">
+              <span class="course-price free">FREE</span>
+              <button class="btn btn-primary btn-sm enroll-btn" id="enroll-python">Enroll Now</button>
+            </div>
+          </div>
+
+          <!-- Course 2: UI/UX Design -->
+          <div class="course-card reveal" data-category="design" data-delay="100">
+            <div class="course-card-top cc-design">
+              <span class="course-tag tag-paid">Paid</span>
+              🎨
+            </div>
+            <div class="course-card-body">
+              <div class="course-category">Design</div>
+              <h3>UI/UX Design Masterclass</h3>
+              <p>Learn Figma, user research, wireframing, and build a professional design portfolio from scratch with hands-on projects.</p>
+              <div class="course-meta">
+                <span><i class="fas fa-clock"></i> 10 Weeks</span>
+                <span><i class="fas fa-signal"></i> Beginner–Mid</span>
+                <span><i class="fas fa-users"></i> 8,200 enrolled</span>
+              </div>
+            </div>
+            <div class="course-card-footer">
+              <span class="course-price">₹2,499</span>
+              <button class="btn btn-primary btn-sm enroll-btn" id="enroll-uiux">Enroll Now</button>
+            </div>
+          </div>
+
+          <!-- Course 3: Spoken English -->
+          <div class="course-card reveal" data-category="softskills" data-delay="200">
+            <div class="course-card-top cc-english">
+              <span class="course-tag tag-free">Free</span>
+              🗣️
+            </div>
+            <div class="course-card-body">
+              <div class="course-category">Soft Skills</div>
+              <h3>Spoken English & Communication</h3>
+              <p>Build fluency, confidence, and professional communication skills through daily exercises, speaking practice, and live sessions.</p>
+              <div class="course-meta">
+                <span><i class="fas fa-clock"></i> 6 Weeks</span>
+                <span><i class="fas fa-signal"></i> All Levels</span>
+                <span><i class="fas fa-users"></i> 18,900 enrolled</span>
+              </div>
+            </div>
+            <div class="course-card-footer">
+              <span class="course-price free">FREE</span>
+              <button class="btn btn-primary btn-sm enroll-btn" id="enroll-english">Enroll Now</button>
+            </div>
+          </div>
+
+          <!-- Course 4: UPSC -->
+          <div class="course-card reveal" data-category="exam" data-delay="0">
+            <div class="course-card-top cc-exam">
+              <span class="course-tag tag-paid">Paid</span>
+              📝
+            </div>
+            <div class="course-card-body">
+              <div class="course-category">Exam Prep</div>
+              <h3>UPSC Civil Services Crash Course</h3>
+              <p>Comprehensive UPSC preparation covering GS papers, CSAT, current affairs, and answer-writing techniques by top-ranked officers.</p>
+              <div class="course-meta">
+                <span><i class="fas fa-clock"></i> 16 Weeks</span>
+                <span><i class="fas fa-signal"></i> Intermediate</span>
+                <span><i class="fas fa-users"></i> 6,800 enrolled</span>
+              </div>
+            </div>
+            <div class="course-card-footer">
+              <span class="course-price">₹4,999</span>
+              <button class="btn btn-primary btn-sm enroll-btn" id="enroll-upsc">Enroll Now</button>
+            </div>
+          </div>
+
+          <!-- Course 5: Data Science -->
+          <div class="course-card reveal" data-category="data" data-delay="100">
+            <div class="course-card-top cc-data">
+              <span class="course-tag tag-paid">Paid</span>
+              📊
+            </div>
+            <div class="course-card-body">
+              <div class="course-category">Data Science</div>
+              <h3>Data Science & Machine Learning</h3>
+              <p>From pandas & NumPy to scikit-learn and neural networks — build real ML models and gain a competitive edge in the data job market.</p>
+              <div class="course-meta">
+                <span><i class="fas fa-clock"></i> 14 Weeks</span>
+                <span><i class="fas fa-signal"></i> Intermediate</span>
+                <span><i class="fas fa-users"></i> 9,500 enrolled</span>
+              </div>
+            </div>
+            <div class="course-card-footer">
+              <span class="course-price">₹3,999</span>
+              <button class="btn btn-primary btn-sm enroll-btn" id="enroll-datascience">Enroll Now</button>
+            </div>
+          </div>
+
+          <!-- Course 6: CAT/MBA -->
+          <div class="course-card reveal" data-category="exam" data-delay="200">
+            <div class="course-card-top cc-finance">
+              <span class="course-tag tag-paid">Paid</span>
+              🎯
+            </div>
+            <div class="course-card-body">
+              <div class="course-category">Exam Prep</div>
+              <h3>CAT & MBA Entrance Mastery</h3>
+              <p>Ace the CAT, XAT, and SNAP with strategic quant, verbal, and DILR preparation plus 20+ full-length mock tests with analysis.</p>
+              <div class="course-meta">
+                <span><i class="fas fa-clock"></i> 12 Weeks</span>
+                <span><i class="fas fa-signal"></i> Advanced</span>
+                <span><i class="fas fa-users"></i> 5,200 enrolled</span>
+              </div>
+            </div>
+            <div class="course-card-footer">
+              <span class="course-price">₹3,499</span>
+              <button class="btn btn-primary btn-sm enroll-btn" id="enroll-cat">Enroll Now</button>
+            </div>
+          </div>
+
+        </div><!-- /courses-grid -->
+
+        <div class="text-center" style="margin-top:48px;">
+          <a href="#contact" class="btn btn-orange" id="view-all-courses-btn">
+            <i class="fas fa-th-large"></i> Request Full Course Catalog
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== INSTRUCTORS =================== -->
+    <section class="instructors-section section-pad" id="instructors">
+      <div class="container">
+        <div class="text-center reveal">
+          <div class="section-label">✦ Meet the Experts</div>
+          <h2 class="section-title">Learn from the Best</h2>
+          <p class="section-subtitle">Our instructors bring real-world experience from top companies, universities, and government bodies.</p>
+        </div>
+
+        <div class="instructors-grid">
+
+          <!-- Instructor 1 -->
+          <div class="instructor-card reveal" data-delay="0">
+            <div class="instructor-photo-wrap">
+              <img src="assets/instructor_1.png" alt="Priya Sharma — Full Stack Developer" loading="lazy" />
+              <div class="instructor-overlay">
+                <div class="instructor-social">
+                  <a href="#" aria-label="LinkedIn" id="instr1-linkedin"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#" aria-label="Twitter" id="instr1-twitter"><i class="fab fa-twitter"></i></a>
+                  <a href="#" aria-label="GitHub" id="instr1-github"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="instructor-info">
+              <h3>Priya Sharma</h3>
+              <div class="instructor-expertise">Full Stack Developer</div>
+              <p>Ex-Infosys senior engineer with 10+ years of experience. Passionate about making web development accessible to everyone.</p>
+              <div class="instructor-stats">
+                <div class="istat"><strong>24</strong><small>Courses</small></div>
+                <div class="istat"><strong>18.2K</strong><small>Students</small></div>
+                <div class="istat"><strong>4.9★</strong><small>Rating</small></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Instructor 2 -->
+          <div class="instructor-card reveal" data-delay="100">
+            <div class="instructor-photo-wrap">
+              <img src="assets/instructor_2.png" alt="Arjun Mehta — UI/UX Designer" loading="lazy" />
+              <div class="instructor-overlay">
+                <div class="instructor-social">
+                  <a href="#" aria-label="LinkedIn" id="instr2-linkedin"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#" aria-label="Dribbble" id="instr2-dribbble"><i class="fab fa-dribbble"></i></a>
+                  <a href="#" aria-label="Instagram" id="instr2-instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="instructor-info">
+              <h3>Arjun Mehta</h3>
+              <div class="instructor-expertise">UI/UX & Product Designer</div>
+              <p>Product designer at a Series-B startup. Previously worked at Zomato & Paytm design teams. Loves teaching design thinking.</p>
+              <div class="instructor-stats">
+                <div class="istat"><strong>16</strong><small>Courses</small></div>
+                <div class="istat"><strong>11.8K</strong><small>Students</small></div>
+                <div class="istat"><strong>4.8★</strong><small>Rating</small></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Instructor 3 -->
+          <div class="instructor-card reveal" data-delay="200">
+            <div class="instructor-photo-wrap">
+              <img src="assets/instructor_3.png" alt="Dr. Ramesh Gupta — UPSC Expert" loading="lazy" />
+              <div class="instructor-overlay">
+                <div class="instructor-social">
+                  <a href="#" aria-label="LinkedIn" id="instr3-linkedin"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#" aria-label="YouTube" id="instr3-youtube"><i class="fab fa-youtube"></i></a>
+                  <a href="#" aria-label="Facebook" id="instr3-facebook"><i class="fab fa-facebook-f"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="instructor-info">
+              <h3>Dr. Ramesh Gupta</h3>
+              <div class="instructor-expertise">UPSC & Public Affairs Expert</div>
+              <p>Retired IAS officer with 32 years of public service. Mentored 200+ UPSC selections. Author of 4 bestselling exam guides.</p>
+              <div class="instructor-stats">
+                <div class="istat"><strong>8</strong><small>Courses</small></div>
+                <div class="istat"><strong>22.5K</strong><small>Students</small></div>
+                <div class="istat"><strong>4.9★</strong><small>Rating</small></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Instructor 4 -->
+          <div class="instructor-card reveal" data-delay="300">
+            <div class="instructor-photo-wrap">
+              <img src="assets/instructor_4.png" alt="Nisha Patel — Communication Coach" loading="lazy" />
+              <div class="instructor-overlay">
+                <div class="instructor-social">
+                  <a href="#" aria-label="LinkedIn" id="instr4-linkedin"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#" aria-label="Instagram" id="instr4-instagram"><i class="fab fa-instagram"></i></a>
+                  <a href="#" aria-label="YouTube" id="instr4-youtube"><i class="fab fa-youtube"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="instructor-info">
+              <h3>Nisha Patel</h3>
+              <div class="instructor-expertise">Communication & English Coach</div>
+              <p>Cambridge-certified English language trainer. Helped 15,000+ professionals speak with confidence. TEDx speaker, Mumbai 2023.</p>
+              <div class="instructor-stats">
+                <div class="istat"><strong>12</strong><small>Courses</small></div>
+                <div class="istat"><strong>19.7K</strong><small>Students</small></div>
+                <div class="istat"><strong>4.9★</strong><small>Rating</small></div>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /instructors-grid -->
+      </div>
+    </section>
+
+    <!-- =================== TESTIMONIALS =================== -->
+    <section class="testimonials-section section-pad" id="testimonials">
+      <div class="container">
+        <div class="text-center reveal">
+          <div class="section-label" style="background:rgba(0,191,165,0.15);color:#4dd9cc;">✦ Student Stories</div>
+          <h2 class="section-title">What Our Learners Say</h2>
+          <p class="section-subtitle">Real words from real students who transformed their careers with BrightPath Academy.</p>
+        </div>
+
+        <div class="testimonials-grid">
+
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card reveal" data-delay="0">
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-quote">
+              I had zero coding knowledge before joining the Python course. Within 8 weeks, I built my first web app and got an internship at a startup. BrightPath genuinely changed my life — the instructors are approachable and the content is super practical!
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">RS</div>
+              <div>
+                <div class="author-name">Rahul Srivastava</div>
+                <div class="author-detail">Python Beginners Course · Software Intern at TechBridge</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card reveal" data-delay="150">
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-quote">
+              The UI/UX Masterclass is literally the best investment I made. The projects in the curriculum were exactly what companies ask for in interviews. I landed a junior designer role 3 weeks after completing the course. 10 out of 10!
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">AK</div>
+              <div>
+                <div class="author-name">Ananya Kapoor</div>
+                <div class="author-detail">UI/UX Masterclass · Junior Designer at Designly</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card reveal" data-delay="300">
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+            </div>
+            <p class="testimonial-quote">
+              Dr. Gupta's UPSC course is outstanding. His simplification of complex GS topics and emphasis on answer writing made the whole process less overwhelming. I cleared Prelims in my very first attempt. Truly grateful to BrightPath!
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">MV</div>
+              <div>
+                <div class="author-name">Meera Verma</div>
+                <div class="author-detail">UPSC Crash Course · UPSC Prelims Cleared 2024</div>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /testimonials-grid -->
+      </div>
+    </section>
+
+    <!-- =================== CTA BANNER =================== -->
+    <div class="wave-divider" style="background:#0A1628;">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" preserveAspectRatio="none">
+        <path d="M0,30 C240,60 480,0 720,30 C960,60 1200,0 1440,30 L1440,60 L0,60 Z" fill="#1565C0" opacity="0.3"/>
+        <path d="M0,40 C360,10 720,60 1080,20 C1260,5 1380,50 1440,40 L1440,60 L0,60 Z" fill="#ffffff"/>
+      </svg>
+    </div>
+
+    <section class="cta-banner" id="cta-banner">
+      <div class="container">
+        <div class="cta-inner">
+          <div class="cta-text">
+            <h2>Ready to Start Your Learning Journey? 🚀</h2>
+            <p>Join 50,000+ students who are already building in-demand skills with BrightPath Academy. Your first step starts today.</p>
+          </div>
+          <div class="cta-actions">
+            <a href="#courses" class="btn btn-primary" id="cta-browse-btn">
+              <i class="fas fa-graduation-cap"></i> Browse All Courses
+            </a>
+            <a href="#contact" class="btn btn-outline" id="cta-contact-btn">
+              <i class="fas fa-comments"></i> Talk to an Advisor
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="wave-divider" style="background:linear-gradient(135deg, #0A1628, #1565C0);">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" preserveAspectRatio="none">
+        <path d="M0,30 C360,0 720,60 1080,30 C1260,15 1380,45 1440,30 L1440,0 L0,0 Z" fill="#ffffff"/>
+      </svg>
+    </div>
+
+    <!-- =================== CONTACT =================== -->
+    <section class="contact-section section-pad" id="contact">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- Left Info -->
+          <div class="contact-info reveal">
+            <div class="section-label">✦ Get In Touch</div>
+            <h2>We'd Love to Hear From You</h2>
+            <p>Have a question about a course, need guidance on which program suits you, or want to partner with us? Reach out and our team will respond within 24 hours.</p>
+
+            <div class="contact-detail-list">
+              <div class="contact-detail-item">
+                <div class="cd-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <div class="cd-text">
+                  <strong>Our Office</strong>
+                  <span>42, Saket District Centre, New Delhi — 110017</span>
+                </div>
+              </div>
+              <div class="contact-detail-item">
+                <div class="cd-icon"><i class="fas fa-envelope"></i></div>
+                <div class="cd-text">
+                  <strong>Email Us</strong>
+                  <span>hello@brightpathacademy.in</span>
+                </div>
+              </div>
+              <div class="contact-detail-item">
+                <div class="cd-icon"><i class="fas fa-phone-alt"></i></div>
+                <div class="cd-text">
+                  <strong>Call Us</strong>
+                  <span>+91 98765 43210 (Mon–Sat, 9am–7pm)</span>
+                </div>
+              </div>
+              <div class="contact-detail-item">
+                <div class="cd-icon"><i class="fab fa-whatsapp"></i></div>
+                <div class="cd-text">
+                  <strong>WhatsApp Support</strong>
+                  <span>+91 98765 43210</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Form -->
+          <div class="contact-form-card reveal" data-delay="150">
+            <h3>Send Us a Message</h3>
+            <form id="contactForm" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contactName">Full Name</label>
+                  <input type="text" id="contactName" name="name" placeholder="e.g. Rahul Sharma" required />
+                </div>
+                <div class="form-group">
+                  <label for="contactEmail">Email Address</label>
+                  <input type="email" id="contactEmail" name="email" placeholder="you@example.com" required />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="contactPhone">Phone Number</label>
+                <input type="tel" id="contactPhone" name="phone" placeholder="+91 XXXXX XXXXX" />
+              </div>
+              <div class="form-group">
+                <label for="contactCourse">Interested In</label>
+                <select id="contactCourse" name="course">
+                  <option value="">Select a course or topic</option>
+                  <option value="python">Python Programming</option>
+                  <option value="uiux">UI/UX Design</option>
+                  <option value="english">Spoken English</option>
+                  <option value="upsc">UPSC Preparation</option>
+                  <option value="datascience">Data Science & ML</option>
+                  <option value="cat">CAT / MBA Entrance</option>
+                  <option value="other">Other / General Query</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="contactMessage">Your Message</label>
+                <textarea id="contactMessage" name="message" placeholder="Tell us how we can help you..." required></textarea>
+              </div>
+              <button type="submit" class="form-submit-btn" id="contactSubmitBtn">
+                <i class="fas fa-paper-plane"></i> Send Message ➜
+              </button>
+              <div class="success-msg" id="successMsg">
+                ✅ Your message has been sent! We'll get back to you within 24 hours.
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =================== FOOTER =================== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-main">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo" id="footer-logo">
+            <div class="logo-icon">🎓</div>
+            Bright<span>Path</span>
+          </a>
+          <p>Empowering students and professionals with skills that matter in the real world. Quality education, delivered online.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook" id="social-fb"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram" id="social-ig"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="Twitter/X" id="social-tw"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link" aria-label="YouTube" id="social-yt"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="social-link" aria-label="LinkedIn" id="social-li"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+            <li><a href="#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+            <li><a href="#courses"><i class="fas fa-chevron-right"></i> All Courses</a></li>
+            <li><a href="#instructors"><i class="fas fa-chevron-right"></i> Instructors</a></li>
+            <li><a href="#testimonials"><i class="fas fa-chevron-right"></i> Testimonials</a></li>
+            <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Popular Courses -->
+        <div class="footer-col">
+          <h4>Popular Courses</h4>
+          <ul class="footer-links">
+            <li><a href="#courses"><i class="fas fa-chevron-right"></i> Python Programming</a></li>
+            <li><a href="#courses"><i class="fas fa-chevron-right"></i> UI/UX Design</a></li>
+            <li><a href="#courses"><i class="fas fa-chevron-right"></i> Spoken English</a></li>
+            <li><a href="#courses"><i class="fas fa-chevron-right"></i> UPSC Prep</a></li>
+            <li><a href="#courses"><i class="fas fa-chevron-right"></i> Data Science</a></li>
+            <li><a href="#courses"><i class="fas fa-chevron-right"></i> CAT & MBA</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-col footer-newsletter">
+          <h4>Stay Updated</h4>
+          <p>Subscribe to get free study resources, course announcements, and special offers.</p>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" id="newsletterEmail" placeholder="Your email address" required />
+            <button type="submit" id="newsletterSubmit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>© 2026 BrightPath Academy. All rights reserved. Made with ❤️ in India.</p>
+        <div class="footer-bottom-links">
+          <a href="#" id="footer-privacy">Privacy Policy</a>
+          <a href="#" id="footer-terms">Terms of Service</a>
+          <a href="#" id="footer-refund">Refund Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to top -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
